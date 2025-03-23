@@ -23,7 +23,7 @@ def load_and_index_document(file_bytes: bytes, api_key: str = None) -> str:
 
     # If no API key provided, attempt to retrieve it from environment variable.
     if not api_key:
-        api_key ="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"
+        api_key =""
         if not api_key:
             raise ValueError("API key is required. Provide it as a parameter or set the OPENAI_API_KEY environment variable.")
     
